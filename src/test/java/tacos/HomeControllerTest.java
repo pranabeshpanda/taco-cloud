@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest
+@WebMvcTest(HomeController.class)
 public class HomeControllerTest {
 
     @Autowired
@@ -24,7 +24,9 @@ public class HomeControllerTest {
     public void testHomePage() throws Exception{
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
+
                 .andExpect(view().name("home"))
+
                 .andExpect(content().string(
                         containsString("Welcome to...")
                 ));
