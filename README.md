@@ -12,6 +12,7 @@ https://tacocloud.herokuapp.com
 Spring Boot version 2.1.0
 
 - DevTools
+- Lombok
 - Thymeleaf
 - Web
 
