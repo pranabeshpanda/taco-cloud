@@ -1,9 +1,6 @@
 # Taco Cloud
 Spring in Action 5 Project
 
-## Demo
-https://tacocloud.herokuapp.com
-
 ## Dependencies
 - Maven
 - JDK 1.8
